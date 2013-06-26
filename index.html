@@ -1,10 +1,16 @@
 <!doctype html>
 <html>
 	<head>
+		<!-- source the JavaScript SDK-->
 		<title>Shaken, Not Stirred - SoundCloud API</title>
 		<script src="http://connect.soundcloud.com/sdk.js"></script>
 		<script src="good.js"></script>
 		<script src="good.css"></script>
+		<!-- source the SoundCloud Custom Player. CSS first as per http://developers.soundcloud.com/docs/custom-player#-->
+		<link rel="stylesheet" href="../css/sc-player-standard.css" type="text/css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+		<script type="text/javascript" src="../js/soundcloud.player.api.js"></script>
+		<script type="text/javascript" src="../js/sc-player.js"></script>
 	</head>
 	<body>
 		<div id= "left-menu">
@@ -23,6 +29,14 @@
 				<li><a href="#" class="tag">Mark McCoin</a></li>
 		</div>
 		<div id="target"></div>
+		<div id= "album-menu">
+			<ul>
+				<h2>Concept Albums<h2>
+				<li><a href="http://soundcloud.com/bruceodland/sets/the-tank-channel" class="sc-player">Bruce Odland Set - The Tank Channel</a></li>
+				<li><a href="http://soundcloud.com/bruceodland/sets/sonic-landscape-listening-to" class="sc-player">Bruce Odland Set - "Sonic Landscape" listening to Australia</a></li>
+			</ul>
+		</div>
+		
 		<div id="logo">
 			<img border="0" src="logo-soundcloud.png" alt="SoundCloud Logo">
 		</div>
